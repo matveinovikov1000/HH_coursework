@@ -1,6 +1,9 @@
 class WorkVacancies:
     """Класс для работы с вакансиями"""
-    def __init__(self, name=None, town=None, requirements=None, payment_from=0, payment_to=0):
+
+    def __init__(
+        self, name=None, town=None, requirements=None, payment_from=0, payment_to=0
+    ):
         self.name = name
         self.town = town
         self.requirements = requirements
@@ -29,9 +32,10 @@ class WorkVacancies:
         """Метод для сравнения зарплат вакансий"""
         return self.salary >= other.salary
 
+
 if __name__ == "__main__":
     wv = WorkVacancies("Кузнец", "Челябинск", "Огнеупорность", 100, 150)
-    wv1= WorkVacancies("Дальнобойщик", "Воркута", "Категория Е", 200, 250)
+    wv1 = WorkVacancies("Дальнобойщик", "Воркута", "Категория Е", 200, 250)
     print(wv.name)
     print(wv.town)
     print(wv.requirements)
